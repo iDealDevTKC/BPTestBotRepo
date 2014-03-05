@@ -28,7 +28,10 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    BOOL test = abs(arc4random()) % 2 == 0;
+    
+    
+    XCTAssertTrue(test, @"Booohooo !");
 }
 
 @end
